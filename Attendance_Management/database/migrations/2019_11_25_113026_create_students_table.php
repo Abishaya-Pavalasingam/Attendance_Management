@@ -17,7 +17,7 @@ class CreateStudentsTable extends Migration
           
             $table->Increments('id')->from(111)->unsigned();
             $table->string('name');
-            $table->string('position');
+            $table->string('RegNo');
             $table->string('email')->nullable()->unique();
             $table->string('pin_code')->nullable();
             $table->text('permissions')->nullable();
